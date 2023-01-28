@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3 {
@@ -11,7 +12,7 @@ body {
   display: flex;
   margin: 0 auto;
 
-  color: #263036;
+  color: var(--color-text-main);
   font-family: "Inter", sans-serif;
   font-weight: 600;
   width: 1024px;
@@ -34,7 +35,7 @@ aside {
 
   padding-top: 58px;
   flex-basis: 385px;
-  background-color: #86a3b4;
+  background-color: var(--color-bacground-aside);
 }
 
 aside h2 {
@@ -44,7 +45,7 @@ aside h2 {
   font-size: 32px;
   line-height: 39px;
 
-  border-bottom: 6px solid #1e1e1e;
+  border-bottom: 6px solid --color-text-secondary;
 }
 
 aside li {
@@ -71,8 +72,8 @@ h3,
 p,
 a,
 ul {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: var(--margin-left-aside);
+  margin-right: var(--margin-right-aside);
 }
 
 .main-image {
@@ -116,18 +117,20 @@ address a {
 }
 
 main {
-  padding-left: 385px;
+  padding-left: var(--padding-left-main_section);
   padding-top: 58px;
   flex-grow: 1;
+
+  background-color: var(--color-bacground-main);
 }
 
 main h2 {
-  padding-bottom: 28px;
+  padding-bottom: var(--padding-bottom-H2title-main);
 
   font-size: 36px;
   line-height: 44px;
 
-  color: #1e1e1e;
+  color: var(--color-text-secondary);
   border-bottom: 5px solid #000000;
 }
 
